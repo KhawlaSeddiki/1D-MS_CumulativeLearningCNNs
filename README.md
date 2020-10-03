@@ -1,4 +1,4 @@
-Code for our paper titled “Cumulative Learning Enables Convolutional Neural Network Representations for Small Mass Spectrometry Data Classification”
+The code that supports the findings in our paper titled “Cumulative Learning Enables Convolutional Neural Network Representations for Small Mass Spectrometry Data Classification”
 
 **Data availability**
 
