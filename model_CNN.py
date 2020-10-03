@@ -1,11 +1,10 @@
-# -*- coding: utf-8 -*-
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
 Created on Fri Sep 30 15:16:09 2020
 @author: khawla Seddiki
 """
-# -*- coding: utf-8 -*-
+
 
 import os
 import numpy as np
