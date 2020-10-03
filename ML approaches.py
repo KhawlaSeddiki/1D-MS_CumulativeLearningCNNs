@@ -47,7 +47,7 @@ def rf_classifier(X, y, is_default=True):
         model.fit(x_train_fs, y_train)
         return model
 
-def svm__classifier(X, y, splits=5, is_default=True):
+def svm_classifier(X, y, is_default=True):
     from sklearn.svm import SVC
 
     if is_default:
@@ -74,7 +74,7 @@ def svm__classifier(X, y, splits=5, is_default=True):
         model.fit(x_train_fs, y_train)
         return model
 
-def lda_classifier(X, y, splits=5, is_default=True):
+def lda_classifier(X, y, is_default=True):
     from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
 
     if is_default:
