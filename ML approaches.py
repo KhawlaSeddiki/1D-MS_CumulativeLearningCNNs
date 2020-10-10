@@ -86,7 +86,7 @@ def lda_classifier(X, y, is_default=True):
             'n_components': [2, 3, 4, 5, 6, 7, 8, 9, 10]
         }
         pca = PCA(n_components=2)
-        x_train_fs = pca.fit_transform(X)
+        #x_train_fs = pca.fit_transform(X)
         model = LinearDiscriminantAnalysis(probability=True)
         grid_search = GridSearchCV(model, param_grid, cv=5, scoring='accuracy',  verbose=1, n_jobs=-1)
         grid_search.fit(x_train_fs, y_train)
