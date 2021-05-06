@@ -154,7 +154,7 @@ for train, test in skf.split(data, label):
 model_source = load_model('/home/khawkha/PycharmProjects/DeepMS/my_model/model1/model1-weights.h5')
 # Transfer learning with variant_leNet model
 # layer.trainable = True allows to fine-tune with weights initialization
-# layer.trainable = False allows to fine-tune without weights initialization
+# layer.trainable = False allows to freeze the weights
 def target_model_from_source_model():
     model_source = load_model('../my_model/model../"model...-weights.h5')
     model_source.summary()
