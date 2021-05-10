@@ -18,7 +18,7 @@ import_sp <- function(spectra_files) {
 # max.mz : number of columns
 # num.bin : number of bins
 binner <- function(spectra, min.mz=min.mz, max.mz=max.mz, num.bin=num.bin){
-  bin.width <-(max.mz - min.mz+1) / num.bin
+  bin.width <-(max.mz - (min.mz+1)) / num.bin
   binned <- numeric(num.bin)
   for(i in 1:num.bin){
     binned[i] <- sum(spectra[(min.mz+(i-1)*bin.width):(i*bin.width)])
